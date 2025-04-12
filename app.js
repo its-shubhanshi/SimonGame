@@ -53,6 +53,11 @@ function checkAns(idx) {
     }
   } else {
     h2.innerHTML = `Game Over! Your score was <b>${level}</b> <br> Press any key to start.`;
+    document.querySelector("body").style.backgroundColor="red"; 
+    setTimeout(function(){
+        document.querySelector("body").style.backgroundColor="#f6fd8d"; 
+        
+    },300)
     reset();
   }
 }
